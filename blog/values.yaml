@@ -1,0 +1,12 @@
+service:
+ name: blog-paul
+ type: NodePort
+ port: 80
+ targetPort: 2368
+ nodePort: 30008
+blog:
+  name: blog-paul
+  replicas: 1
+  image: ghost:latest
+  imagePullPolicy: Always
+  containerPort: 2368
