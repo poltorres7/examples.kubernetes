@@ -1,0 +1,13 @@
+# helm install --dry-run --disable-openapi-validation <NAME> ./mychart
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-indent-configmap
+  labels:
+{{ include "mychart.app" . | indent 4 }}
+data:
+  myvalue: "Hello World"
+  {{- range $key, $val := .Values.favorite }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end }}
+{{ include "mychart.app" . | indent 2 }}

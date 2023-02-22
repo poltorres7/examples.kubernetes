@@ -1,0 +1,10 @@
+configmap.yaml
+configmap-v1-ifmod.yaml
+configmap-v2-with.yaml
+configmap-v3-range.yaml
+configmap-v4-range.yaml
+configmap-v5-key.yaml
+configmap-v6-labels.yaml
+configmap-v7-labels.yaml
+configmap-v8-labels.yaml
+configmap-v9-labe.yaml

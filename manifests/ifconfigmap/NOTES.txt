@@ -1,0 +1,8 @@
+Gracias por instalar {{ .Chart.Name }}.
+
+El release se llama: {{ .Release.Name }}.
+
+Prueba estos comandos
+
+  $ helm status {{ .Release.Name }}
+  $ helm get all {{ .Release.Name }}

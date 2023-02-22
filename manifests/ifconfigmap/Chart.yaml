@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ifconfigmap
+description: Create a configmap using if in helm templating
+type: application
+version: 0.1.0
